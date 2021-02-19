@@ -9,6 +9,8 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ $result->name }}</h5>
                     <p>{{ $result->professionalHeadline }}</p>
+
+                    <a target="_blank" href="https://torre.co/{{ $result->username }}" class="card-link">View Genome</a>
                 </div>
             </div>
         </div>
