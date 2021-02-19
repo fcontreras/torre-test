@@ -27,7 +27,7 @@ class HiringController extends Controller
         $profile = CategoryProfile::find($profileId);
 
         $response = Http::withBody(
-            '{"skill":{"term":"Software Development", "experience":"1-plus-year"}}',
+            '{"skill":{"term":"' . $profile->search_term . '", "experience":"1-plus-year"}}',
             'application/json'
         )->post('https://search.torre.co/people/_search/');
 

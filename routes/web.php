@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\HiringController;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjectController;
+use Illuminate\Support\Facades\URL;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +16,9 @@ use App\Http\Controllers\ProjectController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+if (App::environment('production')) {
+    URL::forceScheme('https');
+}
 
 Route::get('/', [ProjectController::class, 'list']);
 
