@@ -1,0 +1,16 @@
+2-16-21 : 1h
+- Reviewing endpoint specs and possible ideas for a project
+- Evaluating possible techs to use.
+
+2-16-21 : 30mins
+- Creating draft laravel project
+
+2-19-21 : 6h
+- Added support for assigning categories to a project
+- Added support for category profiling
+- Added hiring profiling by category
+- Added hiring search
+- Updated charset for db connection
+- Enhanced search term for skill matching
+- Added gnome link
+- Setup public environment on Digital Ocean
